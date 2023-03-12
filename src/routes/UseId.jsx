@@ -1,7 +1,7 @@
 import { useId } from 'react';
 
 function LabelInputPair() {
-  const id = useId();
+  const id = useId(); // will give the uniqe Id for us to work on something we don't want same Id
   return (
     <div style={{ marginBottom: '50px' }}>
       <label htmlFor={id}>

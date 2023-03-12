@@ -1,4 +1,5 @@
 import { useReducer } from 'react';
+import {CounterReducter} from './UseReducerExample'
 
 // fancy logic to make sure the number is between 0 and a max
 const limit100 = (num, max) => (num < 0 ? 0 : num > max ? max : num);
@@ -37,6 +38,7 @@ const UseReducerComponent = () => {
       >
         This text should always be pretty close to readable
       </h1>
+      
       <div class="btn-groups">
         <div className="btn-group">
           <span class="btn-label">Hue</span>
@@ -54,6 +56,7 @@ const UseReducerComponent = () => {
           <button onClick={() => dispatch({ type: 'DECREMENT_L' })}>➖</button>
         </div>
       </div>
+      <div><CounterReducter/></div>
     </div>
   );
 };
